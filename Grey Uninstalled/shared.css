@@ -1,0 +1,16 @@
+:root {
+  --uninstalled-grayscale: 100%;
+  --uninstalled-opacity: 0.5;
+  --uninstalled-focus-grayscale: 90%;
+  --uninstalled-focus-opacity: 0.9;
+}
+
+.Panel[role="link"]:has(.DownloadArrow) img {
+  opacity: var(--uninstalled-opacity);
+  filter: grayscale(var(--uninstalled-grayscale));
+}
+
+.Panel[role="link"]:has(.DownloadArrow):focus img {
+  opacity: var(--uninstalled-focus-opacity);
+  filter: grayscale(var(--uninstalled-focus-grayscale));
+}
