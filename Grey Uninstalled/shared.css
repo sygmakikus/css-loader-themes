@@ -5,12 +5,22 @@
   --uninstalled-focus-opacity: 0.9;
 }
 
+/* Styles for library tiles */
 .Panel[role="link"]:has(.DownloadArrow) img {
   opacity: var(--uninstalled-opacity);
   filter: grayscale(var(--uninstalled-grayscale));
 }
-
 .Panel[role="link"]:has(.DownloadArrow):focus img {
+  opacity: var(--uninstalled-focus-opacity);
+  filter: grayscale(var(--uninstalled-focus-grayscale));
+}
+
+/* Style for main screen tiles */
+.Panel[role="listitem"]:has(.DownloadArrow) .Panel[role="link"] img {
+  opacity: var(--uninstalled-opacity);
+  filter: grayscale(var(--uninstalled-grayscale));
+}
+.Panel[role="listitem"]:has(.DownloadArrow) .Panel[role="link"]:focus img {
   opacity: var(--uninstalled-focus-opacity);
   filter: grayscale(var(--uninstalled-focus-grayscale));
 }
