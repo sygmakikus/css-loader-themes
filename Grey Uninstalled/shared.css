@@ -5,22 +5,20 @@
   --uninstalled-focus-opacity: 0.9;
 }
 
-/* Styles for library tiles */
-.Panel[role="link"]:has(.DownloadArrow) img {
-  opacity: var(--uninstalled-opacity);
-  filter: grayscale(var(--uninstalled-grayscale));
-}
-.Panel[role="link"]:has(.DownloadArrow):focus img {
-  opacity: var(--uninstalled-focus-opacity);
-  filter: grayscale(var(--uninstalled-focus-grayscale));
+/*
+  This single rule targets uninstalled games on both Main and Library screens by combining selectors
+  - The first selector handles the Library screen and the smaller Main screen tiles
+  - The second selector makes sure very first tile (most recently played game a.k.a the larger tile) on the Main screen is also selected, since it doesnt have the role button
+*/
+.Panel[role="button"]:has(.DownloadArrow) img,
+div[data-id]:has(.DownloadArrow) img {
+    opacity: var(--uninstalled-opacity);
+    filter: grayscale(var(--uninstalled-grayscale));
 }
 
-/* Style for main screen tiles */
-.Panel[role="listitem"]:has(.DownloadArrow) .Panel[role="link"] img {
-  opacity: var(--uninstalled-opacity);
-  filter: grayscale(var(--uninstalled-grayscale));
-}
-.Panel[role="listitem"]:has(.DownloadArrow) .Panel[role="link"]:focus img {
-  opacity: var(--uninstalled-focus-opacity);
-  filter: grayscale(var(--uninstalled-focus-grayscale));
+/* :focus-within is needed for the larger Main screen tile */
+.Panel[role="button"]:has(.DownloadArrow):focus img,
+div[data-id]:has(.DownloadArrow):focus-within img {
+    opacity: var(--uninstalled-focus-opacity);
+    filter: grayscale(var(--uninstalled-focus-grayscale));
 }
