@@ -6,7 +6,7 @@
   "description": "Adds grayscale effect to uninstalled games for Big Picture view, with adjustable opacity and grayscale levels.",
   "manifest_version": 5,
   "inject": {
-    "shared.css": ["SP"]
+    "shared.css": ["bigpicture"]
   },
   "patches": {
     "Grayscale": {
@@ -14,37 +14,37 @@
       "default": "100",
       "values": {
         "0": {
-          "--uninstalled-grayscale": ["0%", "SP"]
+          "--uninstalled-grayscale": ["0%", "bigpicture"]
         },
         "10": {
-          "--uninstalled-grayscale": ["10%", "SP"]
+          "--uninstalled-grayscale": ["10%", "bigpicture"]
         },
         "20": {
-          "--uninstalled-grayscale": ["20%", "SP"]
+          "--uninstalled-grayscale": ["20%", "bigpicture"]
         },
         "30": {
-          "--uninstalled-grayscale": ["30%", "SP"]
+          "--uninstalled-grayscale": ["30%", "bigpicture"]
         },
         "40": {
-          "--uninstalled-grayscale": ["40%", "SP"]
+          "--uninstalled-grayscale": ["40%", "bigpicture"]
         },
         "50": {
-          "--uninstalled-grayscale": ["50%", "SP"]
+          "--uninstalled-grayscale": ["50%", "bigpicture"]
         },
         "60": {
-          "--uninstalled-grayscale": ["60%", "SP"]
+          "--uninstalled-grayscale": ["60%", "bigpicture"]
         },
         "70": {
-          "--uninstalled-grayscale": ["70%", "SP"]
+          "--uninstalled-grayscale": ["70%", "bigpicture"]
         },
         "80": {
-          "--uninstalled-grayscale": ["80%", "SP"]
+          "--uninstalled-grayscale": ["80%", "bigpicture"]
         },
         "90": {
-          "--uninstalled-grayscale": ["90%", "SP"]
+          "--uninstalled-grayscale": ["90%", "bigpicture"]
         },
         "100": {
-          "--uninstalled-grayscale": ["100%", "SP"]
+          "--uninstalled-grayscale": ["100%", "bigpicture"]
         }
       },
       "components": []
@@ -54,22 +54,22 @@
       "default": "0.5",
       "values": {
         "0.5": {
-          "--uninstalled-opacity": ["0.5", "SP"]
+          "--uninstalled-opacity": ["0.5", "bigpicture"]
         },
         "0.6": {
-          "--uninstalled-opacity": ["0.6", "SP"]
+          "--uninstalled-opacity": ["0.6", "bigpicture"]
         },
         "0.7": {
-          "--uninstalled-opacity": ["0.7", "SP"]
+          "--uninstalled-opacity": ["0.7", "bigpicture"]
         },
         "0.8": {
-          "--uninstalled-opacity": ["0.8", "SP"]
+          "--uninstalled-opacity": ["0.8", "bigpicture"]
         },
         "0.9": {
-          "--uninstalled-opacity": ["0.9", "SP"]
+          "--uninstalled-opacity": ["0.9", "bigpicture"]
         },
         "1": {
-          "--uninstalled-opacity": ["1", "SP"]
+          "--uninstalled-opacity": ["1", "bigpicture"]
         }
       },
       "components": []
@@ -79,37 +79,37 @@
       "default": "90",
       "values": {
         "0": {
-          "--uninstalled-focus-grayscale": ["0%", "SP"]
+          "--uninstalled-focus-grayscale": ["0%", "bigpicture"]
         },
         "10": {
-          "--uninstalled-focus-grayscale": ["10%", "SP"]
+          "--uninstalled-focus-grayscale": ["10%", "bigpicture"]
         },
         "20": {
-          "--uninstalled-focus-grayscale": ["20%", "SP"]
+          "--uninstalled-focus-grayscale": ["20%", "bigpicture"]
         },
         "30": {
-          "--uninstalled-focus-grayscale": ["30%", "SP"]
+          "--uninstalled-focus-grayscale": ["30%", "bigpicture"]
         },
         "40": {
-          "--uninstalled-focus-grayscale": ["40%", "SP"]
+          "--uninstalled-focus-grayscale": ["40%", "bigpicture"]
         },
         "50": {
-          "--uninstalled-focus-grayscale": ["50%", "SP"]
+          "--uninstalled-focus-grayscale": ["50%", "bigpicture"]
         },
         "60": {
-          "--uninstalled-focus-grayscale": ["60%", "SP"]
+          "--uninstalled-focus-grayscale": ["60%", "bigpicture"]
         },
         "70": {
-          "--uninstalled-focus-grayscale": ["70%", "SP"]
+          "--uninstalled-focus-grayscale": ["70%", "bigpicture"]
         },
         "80": {
-          "--uninstalled-focus-grayscale": ["80%", "SP"]
+          "--uninstalled-focus-grayscale": ["80%", "bigpicture"]
         },
         "90": {
-          "--uninstalled-focus-grayscale": ["90%", "SP"]
+          "--uninstalled-focus-grayscale": ["90%", "bigpicture"]
         },
         "100": {
-          "--uninstalled-focus-grayscale": ["100%", "SP"]
+          "--uninstalled-focus-grayscale": ["100%", "bigpicture"]
         }
       },
       "components": []
@@ -119,22 +119,22 @@
       "default": "0.9",
       "values": {
         "0.5": {
-          "--uninstalled-focus-opacity": ["0.5", "SP"]
+          "--uninstalled-focus-opacity": ["0.5", "bigpicture"]
         },
         "0.6": {
-          "--uninstalled-focus-opacity": ["0.6", "SP"]
+          "--uninstalled-focus-opacity": ["0.6", "bigpicture"]
         },
         "0.7": {
-          "--uninstalled-focus-opacity": ["0.7", "SP"]
+          "--uninstalled-focus-opacity": ["0.7", "bigpicture"]
         },
         "0.8": {
-          "--uninstalled-focus-opacity": ["0.8", "SP"]
+          "--uninstalled-focus-opacity": ["0.8", "bigpicture"]
         },
         "0.9": {
-          "--uninstalled-focus-opacity": ["0.9", "SP"]
+          "--uninstalled-focus-opacity": ["0.9", "bigpicture"]
         },
         "1": {
-          "--uninstalled-focus-opacity": ["1", "SP"]
+          "--uninstalled-focus-opacity": ["1", "bigpicture"]
         }
       },
       "components": []
