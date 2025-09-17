@@ -2,7 +2,7 @@
   "name": "Grey Uninstalled",
   "author": "Kikus",
   "target": "Library",
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "description": "Adds grayscale effect to uninstalled games for Big Picture view, with adjustable opacity and grayscale levels.",
   "manifest_version": 5,
   "inject": {
