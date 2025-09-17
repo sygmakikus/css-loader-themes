@@ -5,22 +5,28 @@
   --uninstalled-focus-opacity: 0.9;
 }
 
+/* 
+  DownloadArrow is class for "Install" button icon
+  N8aJrSpxQ6II4CY_aFdYI is class for "Recentlty added" block
+  QTJZotuAt67vK7Sa2Wjus is class for "Comming soon" block
+ */
+
 /* Styles for library tiles */
-.Panel[role="link"]:has(.DownloadArrow) img {
+.Panel[role="link"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus) img {
   opacity: var(--uninstalled-opacity);
   filter: grayscale(var(--uninstalled-grayscale));
 }
-.Panel[role="link"]:has(.DownloadArrow):focus img {
+.Panel[role="link"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus):focus img {
   opacity: var(--uninstalled-focus-opacity);
   filter: grayscale(var(--uninstalled-focus-grayscale));
 }
 
 /* Style for main screen tiles */
-.Panel[role="listitem"]:has(.DownloadArrow) .Panel[role="link"] img {
+.Panel[role="listitem"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus) .Panel[role="link"] img {
   opacity: var(--uninstalled-opacity);
   filter: grayscale(var(--uninstalled-grayscale));
 }
-.Panel[role="listitem"]:has(.DownloadArrow) .Panel[role="link"]:focus img {
+.Panel[role="listitem"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus) .Panel[role="link"]:focus img {
   opacity: var(--uninstalled-focus-opacity);
   filter: grayscale(var(--uninstalled-focus-grayscale));
 }
